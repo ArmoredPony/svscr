@@ -6,8 +6,8 @@ not just screenshots.
 
 # Why
 `svscr` is a quick and dirty way to save a clipped screenshot or a picture from
-a browser to any folder with any name using your terminal. Happens to be useful
-from time to time.
+a browser to any folder with any name using your terminal. Primarily used to
+screencap jack's discord messages.
 
 # How
 Put an image into your clipboard somehow and call `svscr`. This will create a
@@ -25,7 +25,7 @@ file to. If you supply directory with this flag *and* within file name, then
 they will be concatenated. E.g. `svscr inner/pic -d outer` will create a file
 with this path: `.../outer/inner/pic.png`.
 
-`-x` or `-extension` can be used to add an extension to your file. It will 
+`-x` or `--extension` can be used to add an extension to your file. It will 
 override the extension you supply within file name. E.g. `svscr pic.png -x webp`
 will save `pic.webp`, not `pic.png`.
 
