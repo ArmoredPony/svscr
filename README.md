@@ -1,15 +1,21 @@
 # What
+
 `svscr` stands for '**s**a**v**e **scr**eenshot' and does exactly that.
 If you have an image saved in your clipboard, this command line tool will
 save it into a file. It can be used with any picture in the clipboard,
 not just screenshots.
 
+This tool was created for and tested on Windows 10, but you can probably build
+it on Linux too.
+
 # Why
+
 `svscr` is a quick and dirty way to save a clipped screenshot or a picture from
 a browser to any folder with any name using your terminal. Primarily used to
 screencap jack's discord messages.
 
 # How
+
 Put an image into your clipboard somehow and call `svscr`. This will create a
 `.png` image in user's home directory with a timestamp for file name. This 
 directory is platform specific.
@@ -28,6 +34,18 @@ with this path: `.../outer/inner/pic.png`.
 `-x` or `--extension` can be used to add an extension to your file. It will 
 override the extension you supply within file name. E.g. `svscr pic.png -x webp`
 will save `pic.webp`, not `pic.png`.
+
+# Installation
+
+Either
+- download the [latest release](https://github.com/ArmoredPony/svscr/releases)
+from GitHub
+- if you have [Rust](https://www.rust-lang.org/) and
+[Cargo](https://doc.rust-lang.org/cargo) installed, execute
+```
+cargo install svscr
+```
+- or just clone the repo and build it yourself
 
 # Credits
 - anyhow

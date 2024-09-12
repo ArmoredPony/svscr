@@ -1,7 +1,10 @@
 [package]
 name = "svscr"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+license = "WTFPL"
+description = "A simple tool that allows you to quickly save a picture from the clipboard to a file"
+repository = "https://github.com/ArmoredPony/svscr"
 
 [dependencies]
 anyhow = "1.0.86"
