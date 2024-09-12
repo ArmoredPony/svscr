@@ -3,8 +3,6 @@ use std::path::PathBuf;
 use arboard::*;
 use chrono::Utc;
 use clap::*;
-use home;
-use image;
 
 #[derive(Parser)]
 #[command(version, about, long_about)]
@@ -53,7 +51,7 @@ fn main() -> anyhow::Result<()> {
 
   if let Some(ext) = args.extension {
     name.set_extension(ext);
-  } else if name.extension() == None {
+  } else if name.extension().is_none() {
     name.set_extension("png");
   }
 
